@@ -31,6 +31,7 @@ Pytorch documentation for all functions and classes involved (too many to list),
 https://pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html
 https://pytorch.org/tutorials/beginner/nn_tutorial.html
 https://github.com/FrancescoSaverioZuppichini/Pytorch-how-and-when-to-use-Module-Sequential-ModuleList-and-ModuleDict
+https://stanford.edu/~shervine/blog/pytorch-how-to-generate-data-parallel
 
 Date of entry: 6.5.2024
 What I’ve worked on:
