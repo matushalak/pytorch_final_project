@@ -1,0 +1,3 @@
+- draw (90% done)
+- ml model (train & test) [first MNIST, then EMNIST]
+- figure out how to add labels to images (file name?)

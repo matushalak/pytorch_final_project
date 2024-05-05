@@ -27,6 +27,10 @@ What I’ve worked on:
 What problems I encountered:
 What I learned:
 Which resources did I use:
+Pytorch documentation for all functions and classes involved (too many to list), some highlights:
+https://pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html
+https://pytorch.org/tutorials/beginner/nn_tutorial.html
+https://github.com/FrancescoSaverioZuppichini/Pytorch-how-and-when-to-use-Module-Sequential-ModuleList-and-ModuleDict
 
 Date of entry: 6.5.2024
 What I’ve worked on:
