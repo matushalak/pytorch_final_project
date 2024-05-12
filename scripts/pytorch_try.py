@@ -216,4 +216,15 @@ my_loader = [data,labels]
 
 # handdrawn data performance
 hand_drawn_performance = test_performance(my_loader,
-                                         first_model) 
+
+                                          first_model)
+
+#%%
+import numpy as np
+models = ['fully_connected_0.0734.pt',
+          'fully_connected_0.6562.pt',
+          'fully_connected_0.4943.pt',
+          'fully_connected_0.1234.pt']
+model_name = np.argmax([float(m.split('_')[-1].split('.pt')[0]) for m in models])
+print(models[model_name])
+#fc_model = fc_model.load_state_dict(torch.load('.' + f"\{models[fc_model]}") 
