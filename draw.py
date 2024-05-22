@@ -1,6 +1,5 @@
 import pygame
 import sys
-from numpy.random import randint
 import os
 
 ## todo: improve smooth linking by lines
@@ -54,7 +53,7 @@ def reset_canvas():
             grid_state[x][y] = False
 
 # Function to save the drawing as a PNG file
-def save_drawing(label):
+def save_drawing(label:str):
     # Count how many files with the same label are already saved in the directory
     count = 0
     directory = 'digit_drawing' if label.isalpha()==False else 'letter_drawing'
@@ -81,7 +80,7 @@ def save_drawing(label):
     reset_canvas()
 
 # Function to fill the center square and its immediate neighbors
-def fill_neighbors(x, y):
+def fill_neighbors(x:int, y:int):
     for dx in range(-1, 2):
         for dy in range(-1, 2):
             nx = x + dx
