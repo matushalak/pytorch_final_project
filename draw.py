@@ -57,7 +57,11 @@ def reset_canvas():
 def save_drawing(label):
     # Count how many files with the same label are already saved in the directory
     count = 0
-    for filename in os.listdir('drawing'):
+    directory = 'digit_drawing' if label.isalpha()==False else 'letter_drawing'
+    # Create the directory if it does not exist
+    os.makedirs(directory, exist_ok=True)
+
+    for filename in os.listdir(directory):
         if filename.startswith(label):
             count += 1
     # Create filename
@@ -72,7 +76,7 @@ def save_drawing(label):
                 pygame.draw.rect(saved_surface, BLACK, (x * square_size, y * square_size, square_size, square_size))
     # Save the surface to a PNG file
     ## todo: change name to be based on number of images already there    
-    pygame.image.save(saved_surface, f'drawing/{filename}')
+    pygame.image.save(saved_surface, f'{directory}/{filename}')
     # Reset the canvas
     reset_canvas()
 
