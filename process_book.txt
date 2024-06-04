@@ -1,33 +1,76 @@
 Date of entry: 1.5.2024
-What I’ve worked on: research on the whole topic, neural networks and what kind of datasets might be available and suitable
-What problems I encountered:
+What I’ve worked on (3h): 
+research on the whole topic, neural networks and what kind of datasets might be available and suitable
+What problems I encountered: 
+no problems, everything seemed quite simple and doable
 What I learned:
+refreshed knowledge about neural network structure and how they learn & roughly how that should be implemented,
+found all the datasets I need directly in pytorch
 Which resources did I use:
+https://www.3blue1brown.com/topics/neural-networks
+https://en.wikipedia.org/wiki/MNIST_database
+https://pytorch.org/
+https://pytorch.org/vision/main/generated/torchvision.datasets.MNIST.html
+https://pytorch.org/vision/main/generated/torchvision.datasets.EMNIST.html
+
 
 Date of entry: 2.5.2024
-What I’ve worked on: implementing drawing code section
+What I’ve worked on (6h): 
+setting up github,
+implementing drawing code section (started by procrastinating on doing the difficult thing and making a neural network)
 What problems I encountered:
+I had worked with github before but still took me some time refresh how everything works and prepare everything,
+pygame was a new library for me and even though in highschool I had done a lot of drawing in python using tkinter, this worked a bit differently
+since it was not the main part of this project but just a cool bonus, I didn't spend too much time on this and mostly followed some online tutorials
 What I learned:
-how pygame works
+basics of how pygame works and how to use it to make interactive drawing interfaces
 Which resources did I use:
+https://www.pygame.org/docs/
+https://www.youtube.com/watch?v=YDP1Hk7uZFA
+https://www.youtube.com/watch?v=h2uRcZUfyqM
+I had randomly watched this before and remembered it would be relevant & rewatched it and used it:
+https://www.youtube.com/watch?v=YDKuknw9WGs
+
 
 Date of entry: 3.5.2024
-What I’ve worked on: perfecting drawing code, more research into pytorch
+What I’ve worked on (3h): 
+perfecting drawing code, more research into pytorch
 What problems I encountered:
+same as before, just trial and error & google to figure out how to get pygame to do exactly what I wanted,
+looking into pytorch I slowly started realizing that it wasn't going to be as easy as I thought
 What I learned:
+more stuff about pygame, started looking into how neural networks are actually implemented in pytorch and found it a bit overwhelming
 Which resources did I use:
+https://www.pygame.org/docs/
+for debugging:
+https://chatgpt.com
+
+https://pytorch.org/
+https://pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html
+
 
 Date of entry: 4.5.2024
-What I’ve worked on: watched videos about pytorch and kept working on drawing code
+What I’ve worked on (4h): 
+watched videos about pytorch to learn a bit more about the syntax
 What problems I encountered:
+i had realized that I needed to see a bit more of examples of people using pytorch and the procedures involved in making a neural network before trying myself
 What I learned:
+the basics steps involved in making a neural network in pytorch, what classes you need to define, which functions to use etc. 
 Which resources did I use:
+(didn't watch the whole video, just skipped through parts, kept coming back to it)
+https://www.youtube.com/watch?v=Z_ikDlimN6A&t=29597s
+
 
 Date of entry: 5.5.2024
-What I’ve worked on: having a first go at making a simple model (fully-connected) only for the DIGITS dataset 
+What I’ve worked on (13h): 
+pushing my progress on the drawing code to my github branch,
+having a first go at making a simple model (fully-connected) only for the DIGITS dataset 
 What problems I encountered:
+apart from the obvious figuring out different functions and syntax, the biggest struggle was figuring out the parameters
+for the model (number of layers, nodes, activation functions, loss functions, batch size, epochs, ...), didn't really know what to base anything on
+when loading my own data the model had terrible performance, didn't knkow why
 What I learned:
-
+how to make, train and test a basic fully connected neural network in pytorch 
 Which resources did I use:
 Pytorch documentation for all functions and classes involved (too many to list), some highlights:
 https://pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html
@@ -36,26 +79,73 @@ https://github.com/FrancescoSaverioZuppichini/Pytorch-how-and-when-to-use-Module
 https://stanford.edu/~shervine/blog/pytorch-how-to-generate-data-parallel
 https://pytorch.org/tutorials/beginner/data_loading_tutorial.html
 
-Date of entry: 6.5.2024
-What I’ve worked on:
-What problems I encountered:
-What I learned:
-Which resources did I use:
-
-Date of entry: 7.5.2024
-What I’ve worked on:
-What problems I encountered:
-What I learned:
-Which resources did I use:
 
 Date of entry: 8.5.2024
-What I’ve worked on:
-What problems I encountered:
-What I learned:
-Which resources did I use:
+What I’ve worked on (1h): 
+preparing a notebook for the EMNIST dataset, inspecting EMNIST dataset properties
+What problems I encountered: no problems
+What I learned: how the labels work in EMNIST (eg. many letters have same label for upper and lowercase)
+Which resources did I use: none
 
-Date of entry: 9.5.2024
-What I’ve worked on:
+
+Date of entry: 12.5.2024
+What I’ve worked on (3h): 
+saving & loading model from files, initial changes made to adress error on my images (invert)
 What problems I encountered:
+before working on the EMNIST dataset, I wanted to fix the poor performance on my handdrawn digits,
+tried a couple of things but it didn't help much
 What I learned:
+how to save and load NN models, how to invert images
+Which resources did I use: many eg.
+https://medium.com/@o.kroeger/tensorflow-mnist-and-your-own-handwritten-digits-4d1cd32bbab4
+https://stackoverflow.com/questions/28084908/how-to-invert-black-and-white-with-scikit-image
+https://medium.com/@mspeciale46/deep-learning-and-emnist-how-to-use-a-convolutional-neural-network-for-image-recognition-81acbcfa99eb
+
+
+Date of entry: 13.5.2024
+What I’ve worked on (2h): 
+trying to fix poor performance on my handdrawn images,
+fixing saving & loading models, experimenting with different model parameters
+What problems I encountered:
+could not get the model to work on my handdrawn images even though it works really well on validation dataset,
+tried a lot of different things, nothing really worked
+What I learned:
+not that much, some ways to preprocess pictures, but since nothing really worked I felt like I hadnt' achieved much progress
 Which resources did I use:
+https://medium.com/@o.kroeger/tensorflow-mnist-and-your-own-handwritten-digits-4d1cd32bbab4
+
+
+Date of entry: 21.5.2024
+What I’ve worked on (1.5h): 
+loading images differently to address issues and starting EMNIST
+What problems I encountered:
+still couldn't get decent performance on my handdrawn digits, 
+gave up at some point and started EMNIST, had terrible performance
+What I learned:
+I learned that cv2 is another library for working with images and might be better than PIL here (just loading images with cv2 lead to better performance somehow),
+I learned that in order to get good performance on my handdrawn digits I might have to invest 
+significantly more time into preprocessing my handdrawn images before giving using them as inputs for the NN,
+since I have already spent a lot of time on the project and still need to do everything on the EMNIST dataset,
+AND wanted to try out a CNN, I decided against this and just accepted that the images are not preprocessed perfectly
+Which resources did I use:
+https://www.geeksforgeeks.org/python-opencv-cv2-imread-method/
+https://medium.com/@o.kroeger/tensorflow-mnist-and-your-own-handwritten-digits-4d1cd32bbab4
+
+
+Date of entry: 22.5.2024
+What I’ve worked on (10h): 
+implementing a convolutional model for EMNIST, 
+changes to accomodate letters and digits, 
+comparing different EMNIST trained models, 
+cleaning up the code and notebooks
+What problems I encountered:
+training took longer for convolutional models, understanding how exactly the CNNs work was a bit beyond me,
+so choosing the parameters was quite difficult, I tried to see what others had done online and replicate something similar
+What I learned:
+how to set up a basic CNN and the basic ideas about the architecture and design on CNNs, 
+I finally understood (maybe) why the performance on digits was poorer than on easy letters
+Which resources did I use: just a few examples
+https://www.kaggle.com/code/cdeotte/how-to-choose-cnn-architecture-mnist
+https://github.com/FrancescoSaverioZuppichini/Pytorch-how-and-when-to-use-Module-Sequential-ModuleList-and-ModuleDict
+https://pytorch.org/docs/stable/generated/torch.nn.Conv2d.html
+https://www.geeksforgeeks.org/python-opencv-cv2-imread-method/
